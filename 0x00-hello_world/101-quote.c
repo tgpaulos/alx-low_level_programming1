@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <unistd.h>
+
 /**
  * main - Entry point for the program
  * Return: 1(success)
