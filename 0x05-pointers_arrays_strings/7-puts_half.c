@@ -1,19 +1,31 @@
-void puts_half(char *str) {
-    // Get the length of the string
-    int len = strlen(str);
+#include <stdio.h>
+#include <string.h>
+/**
+ * puts_half - print the second half of the string
+ * @str: string
+ * Return:0(success)
+ */
 
-    // Calculate the starting index for printing
-    int start = len / 2;
-    if (len % 2 == 1) {
-        start = (len - 1) / 2;
-    }
 
-    // Print the second half of the string
-    for (int i = start; i < len; i++) {
-        putchar(str[i]);
-    }
+void puts_half(char *str)
+{
+	int len = strlen(str);
+	int start;
+	int i;
 
-    // Print a newline character
-    putchar('\n');
+	if (len % 2 == 0)
+	{
+		start = len / 2;
+	}
+	else
+	{
+		start = (len - 1) / 2;
+	}
+
+	for (i = start; i < len; i++)
+	{
+		putchar(str[i]);
+	}
+
+	putchar('\n');
 }
-
