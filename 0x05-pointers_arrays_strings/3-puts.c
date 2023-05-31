@@ -8,7 +8,6 @@
 void _puts(char *str)
 {
 	int s = 0;
-
 	do {
 		putchar(str[s]);
 		s++;
