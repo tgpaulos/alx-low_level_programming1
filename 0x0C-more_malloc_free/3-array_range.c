@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- *array_range -
- *@size:size of memory
- *@arr:array
+ *array_range - a function that creates an array of integers
+ *@min:minimum value
+ *@max:maximum value
  *Return:pointer
  *
  */
@@ -15,7 +15,7 @@ int *array_range(int min, int max)
 
 	if (min > max)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	size = (max - min) + 1;
@@ -23,7 +23,7 @@ int *array_range(int min, int max)
 
 	if (arr == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	for (i = 0; i < size; i++)
@@ -31,5 +31,5 @@ int *array_range(int min, int max)
 		arr[i] = min + i;
 	}
 
-	return arr;
+	return (arr);
 }
