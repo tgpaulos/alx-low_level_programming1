@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *string_concat-concatenate two strings
+ *string_nconcat-concatenate two strings
  *@s1: string one
  *@s2:string two
  *@n:number of characters
@@ -30,12 +30,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (newstr == NULL)
 		return (NULL);
 
-	for (i = 0; i < len1; i++) {
+	for (i = 0; i < len1; i++)
+	{
 		newstr[i] = s1[i];
 	}
-	for (i = 0; i < n; i++) {
+	for (i = 0; i < n; i++)
+	{
 		newstr[len1 + i] = s2[i];
-	}	
+	}
 	newstr[len1 + n] = '\0';
 
 	return (newstr);
