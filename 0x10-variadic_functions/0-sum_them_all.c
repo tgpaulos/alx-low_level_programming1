@@ -2,7 +2,6 @@
 /**
  *sum_them_all - a function that returns the sum of all its parameters
  *@n:the number of variable arguments
- *@sum:sum of all arguments
  *Return:sum
  */
 
