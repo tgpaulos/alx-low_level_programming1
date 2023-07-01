@@ -7,23 +7,22 @@
  *
  */
 
-int is_prime_number(int n)
+int is_prime_number(int n, int divisor)
 {
-	int divisor = 2;
-
 	if (n <= 1)
 	{
 		return (0);
 	}
 
-	while (divisor * divisor <= n)
+	if (divisor * divisor > n)
 	{
-		if (n % divisor == 0)
-		{
-			return (0);
-		}
-		divisor++;
+		return (1);
 	}
 
-	return (1);
+	if (n % divisor == 0)
+	{
+		return (0);
+	}
+
+	return (n, divisor + 1);
 }
