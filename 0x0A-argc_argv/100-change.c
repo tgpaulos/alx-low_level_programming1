@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int i;
 	int cents;
 	int coins[5] = {25, 10, 5, 2, 1};
-	int num_coins,count;
+	int num_coins, count;
 
 	if (argc != 2)
 	{
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	
+
 	num_coins = sizeof(coins) / sizeof(coins[0]);
 	count = 0;
 
