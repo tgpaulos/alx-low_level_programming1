@@ -6,6 +6,7 @@
  *
  * Return: A integer
  */
+
 int _atoi(char *s)
 {
 	int c = 0;
@@ -38,4 +39,3 @@ int _atoi(char *s)
 	ni *= min;
 	return (ni);
 }
-
